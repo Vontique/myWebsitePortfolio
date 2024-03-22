@@ -1,0 +1,170 @@
+/* Reset default margin, padding, and box size */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: left;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.five-hobbies-container ol li {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.skills-container ul li {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* Navbar styles */
+#navbar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    position: fixed;
+    justify-content: ;
+    top: 0;
+}
+
+.logo {
+    padding: 2px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+    border: 5px groove black;
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(14, 143, 66);
+}
+
+.nav-list {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-list li {
+    margin: 10px;
+    padding: 10px;
+    border: 5px outset black;
+}
+
+.nav-list li:hover {
+    background-color: rgb(112, 209, 151);
+    border: 5px inset black;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Section styles */
+section {
+    padding: 50px;
+}
+
+.welcome-container, .about-container, .five-hobbies-container, .skills-container, .contacts-container {
+    text-align: center;
+}
+
+.welcome-container {
+    margin-top: 100px;
+}
+
+/* About section styles */
+#picture {
+    border-radius: 15%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    float: left; /* Add this line */
+    margin-right: 20px; /* Add this line to create some space between the image and other content */
+}
+
+.about-container p {
+    margin-bottom: 15px;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+.contacts-container {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts-container h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contacts-container a {
+    text-decoration: none;
+    color: rgb(42, 230, 255);
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
